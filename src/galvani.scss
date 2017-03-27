@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Josefin+Slab|Raleway:200,400,600');
+
+// Reset
+@import "reset.scss";
+@include meyer-reset;
+
+body {
+  font-family: $font-family-text;
+  font-weight: $font-weight-normal;
+  background-color: $white;
+  color: $black;
+
+  padding-top: $navbar-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-title;
+  font-weight: $font-weight-normal;
+  margin-bottom: $grid-size;
+}
+
+h1 {
+  font-size: $font-size-large * 1.8;
+  line-height: $font-size-large * 2.3;
+}
+
+h2 {
+  font-size: $font-size-large * 1.5;
+  line-height: $font-size-large * 2;
+}
+
+h3 {
+  font-size: $font-size-large * 1.3;
+  line-height: $font-size-large * 1.7;
+}
+
+h4 {
+  font-size: $font-size-large;
+  line-height: $font-size-large * 1.4;
+}
+
+h5 {
+  font-size: $font-size-large * 0.7;
+  line-height: $font-size-large;
+}
+
+h6 {
+  font-size: $font-size;
+  line-height: $font-size * 1.3;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+p {
+  font-size: $font-size;
+  line-height: $font-size * 1.3;
+  margin-bottom: $grid-size;
+}
+
+code {
+  font-family: $font-family-mono;
+  color: $teal1;
+  padding: 3px;
+  margin: -3px -1px;
+  background-color: lighten($teal3, 20%);
+  border-radius: $border-radius;
+  line-height: $font-size;
+  font-size: $font-size-small;
+}
+
+@import "./components/components.scss";

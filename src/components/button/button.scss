@@ -1,0 +1,109 @@
+@import "../../variables.scss";
+
+.button {
+  border-radius: $border-radius;
+  padding: $grid-size;
+  background-color: $grey2;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  font-family: $font-family-text;
+  text-transform: uppercase;
+  margin: 0 $grid-size / 2;
+  transition: all 90ms ease-in;
+}
+
+.button.button-large {
+  font-size: $font-size-large;
+  padding: $grid-size * 1.5;
+}
+
+.button:disabled {
+  background-color: $grey1;
+}
+
+.button:hover {
+  background-color: $grey3;
+}
+
+.button.intent-danger {
+  background-color: $red2;
+}
+
+.button.intent-danger:hover {
+  background-color: $red3;
+}
+
+.button.intent-warning {
+  background-color: $orange2;
+}
+
+.button.intent-warning:hover {
+  background-color: $orange3;
+}
+
+.button.intent-success {
+  background-color: $teal2;
+}
+
+.button.intent-success:hover {
+  background-color: $teal3;
+}
+
+.button.intent-info {
+  background-color: $blue2;
+}
+
+.button.intent-info:hover {
+  background-color: $blue3;
+}
+
+.button.button-minimal {
+  background-color: transparent;
+  color: $grey2;
+}
+
+.button.button-minimal:hover {
+  background-color: $grey2;
+  color: $white;
+}
+
+.button.button-minimal.intent-danger {
+  background-color: transparent;
+  color: $red3;
+}
+
+.button.button-minimal.intent-danger:hover {
+  background-color: $red2;
+  color: $white;
+}
+
+.button.button-minimal.intent-warning {
+  background-color: transparent;
+  color: $orange3;
+}
+
+.button.button-minimal.intent-warning:hover {
+  background-color: $orange2;
+  color: $white;
+}
+
+.button.button-minimal.intent-info {
+  background-color: transparent;
+  color: $blue2;
+}
+
+.button.button-minimal.intent-info:hover {
+  background-color: $blue2;
+  color: $white;
+}
+
+.button.button-minimal.intent-success {
+  background-color: transparent;
+  color: $teal2;
+}
+
+.button.button-minimal.intent-success:hover {
+  background-color: $teal2;
+  color: $white;
+}

@@ -1,0 +1,24 @@
+@import "galvani.scss";
+
+body {
+  padding: $grid-size;
+  padding-top: $navbar-height;
+}
+
+.demo-section {
+  padding: $grid-size;
+  margin-bottom: $grid-size;
+  border-bottom: 1px solid $grey3;
+}
+
+.demo-section:last-of-type {
+  border-bottom: none;
+}
+
+.demo-columns {
+  display: flex;
+}
+
+.button {
+  margin-right: $grid-size;
+}

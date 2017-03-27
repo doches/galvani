@@ -1,0 +1,115 @@
+@import "../../galvani.scss";
+
+$swatch-height: $grid-size * 6;
+
+.swatch-group {
+  display: flex;
+  width: $swatch-height;
+  height: $swatch-height * 3;
+  border-radius: $border-radius;
+  margin: $grid-size / 2 0;
+  flex-direction: column;
+  float: left;
+  margin: $grid-size / 2;
+}
+
+.swatch-group-title {
+  font-family: $font-family-mono;
+  font-size: $font-size-small;
+  height: 0;
+  position: relative;
+  top: $grid-size * 1.5;
+  color: $white;
+  text-align: center;
+  text-shadow: 1px 1px 0px transparentize($black, 0.5);
+}
+
+.swatch {
+  flex: 1 1 auto;
+  max-width: $swatch-height;
+  max-height: $swatch-height;
+}
+
+.swatch:first-of-type {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.swatch:last-of-type {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.swatch-black {
+  background-color: $black;
+  color: $white;
+}
+
+.swatch-white {
+  background-color: $white;
+  color: $black;
+}
+
+.swatch-grey1 {
+  background-color: $grey1;
+}
+.swatch-grey2 {
+  background-color: $grey2;
+}
+.swatch-grey3 {
+  background-color: $grey3;
+}
+.swatch-blue1 {
+  background-color: $blue1;
+}
+.swatch-blue2 {
+  background-color: $blue2;
+}
+.swatch-blue3 {
+  background-color: $blue3;
+}
+.swatch-green1 {
+  background-color: $green1;
+}
+.swatch-green2 {
+  background-color: $green2;
+}
+.swatch-green3 {
+  background-color: $green3;
+}
+.swatch-red1 {
+  background-color: $red1;
+}
+.swatch-red2 {
+  background-color: $red2;
+}
+.swatch-red3 {
+  background-color: $red3;
+}
+.swatch-teal1 {
+  background-color: $teal1;
+}
+.swatch-teal2 {
+  background-color: $teal2;
+}
+.swatch-teal3 {
+  background-color: $teal3;
+}
+.swatch-orange1 {
+  background-color: $orange1;
+}
+.swatch-orange2 {
+  background-color: $orange2;
+}
+.swatch-orange3 {
+  background-color: $orange3;
+}
+.swatch-yellow1 {
+  background-color: $yellow1;
+}
+.swatch-yellow2 {
+  background-color: $yellow2;
+}
+.swatch-yellow3 {
+  background-color: $yellow3;
+}

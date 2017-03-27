@@ -1,0 +1,52 @@
+// Layout
+$grid-size: 10px;
+$border-radius: 4px;
+$navbar-height: 50px;
+
+// Typography
+$font-size: $grid-size * 1.5;
+$font-size-large: $grid-size * 2;
+$font-size-small: $grid-size * 1.2;
+
+$line-height: ($grid-size * 1.8) / $font-size + 0.0001;
+
+$font-family-text: 'Raleway', sans-serif;
+$font-family-title: 'Raleway', sans-serif;
+$font-family-mono: 'Roboto Mono', monospace;
+
+$font-weight-normal: 400;
+$font-weight-light: 200;
+$font-weight-bold: 600;
+
+// Colors
+$white: #FCFCFF;
+$white: #FFFFFF;
+$black: #000012;
+
+$grey1: mix($white, $black, 25%);
+$grey2: mix($white, $black, 50%);
+$grey3: mix($white, $black, 75%);
+
+$blue1: rgba(0, 67, 88, 1.000);
+$blue2: lighten($blue1, 20%);
+$blue3: lighten($blue1, 40%);
+
+$green1: rgba(190, 219, 57, 1.000);
+$green2: lighten($green1, 10%);
+$green3: lighten($green1, 20%);
+
+$yellow1: rgba(255, 225, 26, 1.000);
+$yellow2: lighten($yellow1, 10%);
+$yellow3: lighten($yellow1, 20%);
+
+$red2: adjust-hue($blue2, 165deg);
+$red1: darken($red2, 10%);
+$red3: lighten($red2, 35%);
+
+$orange1: rgba(253, 116, 0, 1.000);
+$orange2: lighten($orange1, 10%);
+$orange3: lighten($orange1, 20%);
+
+$teal1: rgba(31, 138, 112, 1.000);
+$teal2: lighten($teal1, 20%);
+$teal3: lighten($teal1, 40%);

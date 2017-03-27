@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "outDir": ".",
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "jsx": "react",
+    "types": [
+      "node"
+    ],
+    "declaration": true
+  },
+  "include": [
+    "src/components/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.d.ts",
+    "src/demo/*",
+    "demo.*"
+  ],
+  "compileOnSave": false
+}

@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.navbar-container {
+  display: flex;
+  padding: $grid-size * 1.5 $grid-size * 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $grey1;
+  border-bottom: 2px solid $orange1;
+  color: $white;
+  font-family: $font-family-title;
+  font-weight: $font-weight-normal;
+  z-index: 100;
+  height: $navbar-height;
+  box-sizing: border-box;
+  align-items: center;
+  box-shadow: 0 1px 4px transparentize($orange2, 0.1);
+}
+
+.navbar-left {
+  flex: 1 1 auto;
+  text-align: left;
+  font-weight: $font-weight-light;
+  letter-spacing: 2px;
+  font-size: $font-size-large;
+}
+
+.navbar-right {
+  flex: 1 1 auto;
+  text-align: right;
+
+  color: $teal3;
+}

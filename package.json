@@ -1,0 +1,45 @@
+{
+  "name": "galvani",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all clean compile copy",
+    "clean": "rm -rf dist/*",
+    "compile": "webpack --config webpack.config.js",
+    "copy": "cp src/variables.scss dist/",
+    "watch": "webpack --config webpack.config.js --watch",
+    "serve": "webpack-dev-server",
+    "demo": "npm-run-all demo-clean demo-build",
+    "demo-clean": "rm -rf demo/*",
+    "demo-build": "webpack --config webpack.demo.js",
+    "demo-watch": "webpack --config webpack.demo.js --watch",
+    "demo-serve": "webpack-dev-server --config webpack.demo.js"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.57",
+    "@types/node": "^7.0.10",
+    "@types/react": "^15.0.18",
+    "@types/react-dom": "^0.14.23",
+    "@types/react-router": "3.0.0",
+    "@types/whatwg-fetch": "^0.0.33",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.1",
+    "npm-run-all": "^4.0.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.0",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.1",
+    "uglify-js": "^2.8.15",
+    "uglifyjs-webpack-plugin": "^0.3.1",
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "3.0.2"
+  }
+}
