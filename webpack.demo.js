@@ -11,7 +11,7 @@ module.exports = {
   entry: './src/demo.tsx',
   output: {
     filename: 'demo.js',
-    path: path.resolve(__dirname, 'demo')
+    path: path.resolve(__dirname)
   },
   module: {
     rules: [
