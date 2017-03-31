@@ -11,11 +11,13 @@
   text-transform: uppercase;
   margin: 0 $grid-size / 2;
   transition: all 90ms ease-in;
+  text-shadow: 1px 1px 2px transparentize($black, 0.75);
+  background-image: linear-gradient(rgba($white, 0.1), rgba($white, 0.0));
 }
 
 .button.button-large {
   font-size: $font-size-large;
-  padding: $grid-size * 1.5;
+  padding: $grid-size * 1.25;
 }
 
 .button:disabled {
@@ -61,6 +63,8 @@
 .button.button-minimal {
   background-color: transparent;
   color: $grey2;
+  text-shadow: none;
+  background-image: none;
 }
 
 .button.button-minimal:hover {

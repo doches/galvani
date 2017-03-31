@@ -8,7 +8,8 @@
   left: 0;
   right: 0;
   background-color: $grey1;
-  border-bottom: 2px solid $orange1;
+  background-image: linear-gradient($grey1, darken($grey1, 2%));
+  border-bottom: 2px solid $orange2;
   color: $white;
   font-family: $font-family-title;
   font-weight: $font-weight-normal;
@@ -16,15 +17,14 @@
   height: $navbar-height;
   box-sizing: border-box;
   align-items: center;
-  box-shadow: 0 1px 4px transparentize($orange2, 0.1);
+  box-shadow: 0 0 3px transparentize($grey1, 0.5);
 }
 
 .navbar-left {
   flex: 1 1 auto;
   text-align: left;
   font-weight: $font-weight-light;
-  letter-spacing: 2px;
-  font-size: $font-size-large;
+  font-size: $font-size-large * 1.5;
 }
 
 .navbar-right {

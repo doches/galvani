@@ -1,4 +1,5 @@
 import * as React from "react";
+import Blockquote from "../../components/blockquote/blockquote";
 
 export default class DemoTypography extends React.Component<{}, {}> {
   public render() {
@@ -11,6 +12,13 @@ export default class DemoTypography extends React.Component<{}, {}> {
         <h3>h3. Header</h3>
         <h4>h4. Header</h4>
         <h5>h5. Header</h5>
+        <h2>Blockquotes</h2>
+        <Blockquote citation="Aristotle" source="Categories">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+        </Blockquote>
+        <Blockquote citation="Foo" align="right">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+        </Blockquote>
       </div>
     );
   }

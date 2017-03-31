@@ -1,0 +1,63 @@
+@import "../../variables.scss";
+
+$border-width: 4px;
+$border-color: $grey4;
+
+.blockquote {
+  margin-bottom: $grid-size;
+  border-left: $border-width solid $border-color;
+  padding-left: $grid-size * 2;
+  line-height: $font-size * 1.36;
+
+  .reference {
+    display: block;
+    text-align: left;
+    margin-top: $grid-size * 1.5;
+    color: $grey2;
+    font-style: italic;
+  }
+
+  .reference::before {
+    content: "\2014";
+    padding-right: $grid-size / 2;
+  }
+
+  .citation {
+    font-style: normal;
+  }
+
+  .quote::before {
+    content: "\201c";
+  }
+
+  .quote::after {
+    content: "\201d";
+  }
+
+  .quote::before,
+  .quote::after {
+    color: $grey3;
+    font-size: $font-size-large;
+  }
+}
+
+.blockquote-right {
+  border-left: none;
+  border-right: $border-width solid $border-color;
+  padding-left: 0;
+  padding-right: $grid-size * 2;
+  text-align: right;
+
+  .reference {
+    text-align: right;
+  }
+
+  .reference::before {
+    display: none;
+  }
+
+  .reference::after {
+    content: "\2014";
+    padding-left: $grid-size / 2;
+  }
+}

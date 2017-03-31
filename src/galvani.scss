@@ -62,15 +62,21 @@ p {
   margin-bottom: $grid-size;
 }
 
-code {
+code, pre {
   font-family: $font-family-mono;
   color: $teal1;
-  padding: 3px;
-  margin: -3px -1px;
-  background-color: lighten($teal3, 20%);
+  padding: 2px;
+  margin: 2px 1px;
+  background-color: transparentize($teal3, 0.7);
   border-radius: $border-radius;
   line-height: $font-size;
   font-size: $font-size-small;
+}
+
+pre {
+  display: inline-block;
+  margin: $grid-size;
+  padding: $grid-size;
 }
 
 @import "./components/components.scss";

@@ -4,16 +4,10 @@ A simple styling and component library for use in React and Sass apps.
 
 ## Installation
 
-Install with npm:
+Install with npm, yarn, bower, or wherever fine packages are sold:
 
     npm install https://github.com/doches/galvani.git#develop --save
-
-Or Yarn:
-
     yarn add https://github.com/doches/galvani.git#develop
-
-Or Bower:
-
     bower install https://github.com/doches/galvani.git#develop --save
 
 ## Types

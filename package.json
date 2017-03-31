@@ -11,7 +11,7 @@
     "watch": "webpack --config webpack.config.js --watch",
     "serve": "webpack-dev-server",
     "demo": "npm-run-all demo-clean demo-build",
-    "demo-clean": "rm -rf demo/*",
+    "demo-clean": "rm demo.js galvani.css index.html",
     "demo-build": "webpack --config webpack.demo.js",
     "demo-watch": "webpack --config webpack.demo.js --watch",
     "demo-serve": "webpack-dev-server --config webpack.demo.js"
